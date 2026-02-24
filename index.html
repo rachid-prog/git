@@ -2,82 +2,73 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Formation Git</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formation git</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./images/logo.png" alt="logo git" class="logo">
-            <h1>Formation git</h1>
-        </header>
-        <section>            
-            <p>git un systéme distribué</p>
-            <p>Versioning</p>
-            <ul>
-                <li>Historique des modifications</li>
-                <li>Résolution des conflits par la fusion</li>
-                <li>Possibilité d'avoir des branches</li>
-            </ul>
-            <table>
-                <thead><tr><th>Commnades</th><th>Utilisation</th></tr></thead>
-                <tbody>
-                    <tr><td>.gitignore</td><td></td></tr>
-                    <tr><td>gitk</td><td></td></tr>
-                    <tr><td>git --version</td><td></td></tr>
-                    <tr><td>git help</td><td></td></tr>
-                    <tr><td>git help config</td><td></td></tr>
-                    <tr><td>git config --global user.name "nom"</td><td></td></tr>
-                    <tr><td>git config --global user.email "email"</td><td></td></tr>
-                    <tr><td>git config --list</td><td></td></tr>
-                    <tr><td>git status</td><td></td></tr>
-                    <tr><td>git add index.html</td><td></td></tr>
-                    <tr><td>git add .</td><td></td></tr>
-                    <tr><td>git commit -m "message"</td><td></td></tr>
-                    <tr><td>git -a -m "message"</td><td></tr>
-                    <tr><td>git reset</td><td></td></tr>
-                    <tr><td>git log</td><td></td></tr>
-                    <tr><td>git log -1</td><td></td></tr>
-                    <tr><td>git log -2</td><td></td></tr>
-                    <tr><td>git log --oneline</td><td></td></tr>
-                    <tr><td>git log -p index.html</td><td></td></tr>
-                    <tr><td>git log -p -2 index.html</td><td></td></tr>
-                    <tr><td>git diff index.html</td><td></td></tr>
-                    <tr><td>git chechout SHA-1</td><td></td></tr>
-                    <tr><td>git checkout master</td><td></td></tr>
-                    <tr><td>git checkout SHA-1 index.html</td><td></td></tr>
-                    <tr><td>git checkout master index.html</td><td></td></tr>
-                    <tr><td>git reset --hard SHA-1</td><td></td></tr>
-                    <tr><td>git reset --soft SHA-1</td><td></td></tr>
-                    <tr><td>git branch</td><td></td></tr>
-                    <tr><td>git branch css</td><td></td></tr>
-                    <tr><td>git switch css</td><td></td></tr>
-                    <tr><td>git merge master css</td><td></td></tr>
-                    <tr><td>git branh -d css</td><td></td></tr>
-                    <tr><td>git branch -D css</td><td></td></tr>
-                    <tr><td>git commit --amend -m "message"(avant remote)</td><td></td></tr>
-                    <tr><td>git rebise css(partire de la banche css)</td><td></td></tr>
-                    <tr><td>git stash</td><td></td></tr>
-                    <tr><td>git stash list</td><td></td></tr>
-                    <tr><td>git stash apply</td><td></td></tr>
-                    <tr><td>git stash drop</td><td></td></tr>
-                    <tr><td>github | bitbucket</td><td></td></tr>                  
-                    
-                    <tr><td>git remote [-v]</td><td></td></tr>
-                    <tr><td>git init --bare</td><td></td></tr>
-                    <tr><td>git remote add origin [url, ssh , c:/repot]</td><td></td></tr>
-                    <tr><td>git branch -r</td><td></td></tr>
-                    <tr><td>git push origin master</td><td></td></tr>
-                    <tr><td>git push origin css</td><td></td></tr>
-                    <tr><td>git branch -d css && git push origin --delete css</td><td></td></tr>
-                    <tr><td>git pull origin master</td><td></td></tr>
-                    <tr><td>git clone [url, ssh , c:/repot]</td><td></td></tr>
-                    <tr><td>npm i -g ==> ungit</td><td></td></tr>
-                </tbody>    
-            </table>
-        </section>
-        <footer></footer>
-    </div>
+
+<div class="container">
+
+    <header>
+        <h1>🚀 Formation Git</h1>
+        <p class="subtitle">Guide Complet – Débutant à Intermédiaire</p>
+    </header>
+
+    <section>
+
+        <h2>1️⃣ Configuration</h2>
+        <table>
+            <tr><th>Commande</th><th>Description</th></tr>
+            <tr><td><code>git config --global user.name "Nom"</code></td><td>Définir le nom</td></tr>
+            <tr><td><code>git config --global user.email "email"</code></td><td>Définir l’email</td></tr>
+            <tr><td><code>git config --list</code></td><td>Voir configuration</td></tr>
+        </table>
+
+        <h2>2️⃣ Commandes Essentielles</h2>
+        <table>
+            <tr><th>Commande</th><th>Description</th></tr>
+            <tr><td><code>git init</code></td><td>Initialiser un dépôt</td></tr>
+            <tr><td><code>git clone URL</code></td><td>Cloner un dépôt</td></tr>
+            <tr><td><code>git status</code></td><td>Voir l’état</td></tr>
+            <tr><td><code>git add .</code></td><td>Ajouter fichiers</td></tr>
+            <tr><td><code>git commit -m "message"</code></td><td>Créer un commit</td></tr>
+            <tr><td><code>git pull --rebase</code></td><td>Mettre à jour proprement</td></tr>
+            <tr><td><code>git push</code></td><td>Envoyer les commits</td></tr>
+        </table>
+
+        <h2>3️⃣ Branches</h2>
+        <table>
+            <tr><th>Commande</th><th>Description</th></tr>
+            <tr><td><code>git branch</code></td><td>Lister branches</td></tr>
+            <tr><td><code>git switch -c feature/nom</code></td><td>Créer + changer</td></tr>
+            <tr><td><code>git merge nom</code></td><td>Fusionner</td></tr>
+            <tr><td><code>git branch -d nom</code></td><td>Supprimer</td></tr>
+        </table>
+
+        <h2>4️⃣ Annulation</h2>
+        <table>
+            <tr><th>Commande</th><th>Description</th></tr>
+            <tr><td><code>git restore fichier</code></td><td>Annuler modification</td></tr>
+            <tr><td><code>git reset --soft HEAD~1</code></td><td>Annuler commit</td></tr>
+            <tr><td><code>git revert SHA</code></td><td>Annuler proprement</td></tr>
+        </table>
+
+        <h2>5️⃣ Avancé</h2>
+        <table>
+            <tr><th>Commande</th><th>Description</th></tr>
+            <tr><td><code>git rebase -i HEAD~3</code></td><td>Rebase interactif</td></tr>
+            <tr><td><code>git stash</code></td><td>Sauvegarde temporaire</td></tr>
+            <tr><td><code>git cherry-pick SHA</code></td><td>Appliquer commit</td></tr>
+        </table>
+
+    </section>
+
+    <footer>
+        © 2026 – Formation Git | Support pédagogique
+    </footer>
+
+</div>
+
 </body>
 </html>
