@@ -4,3 +4,26 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+body{
+    background: silver;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    background: #fff;
+}
+ul{
+    margin-left: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    text-align: center;
+    text-transform:uppercase
+}
+th, td{
+    border: 2px solid #000;
+    padding: 10px;
+}
